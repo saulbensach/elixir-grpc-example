@@ -26,7 +26,9 @@ defmodule Example.MixProject do
       {:grpc, github: "elixir-grpc/grpc", tag: "v0.4.0"},
       {:cowboy, "~> 2.5",
        git: "https://github.com/elixir-grpc/cowboy.git", tag: "grpc-2.6.3", override: true},
-      {:ranch, "~> 1.7", override: true}
+      {:ranch, "~> 1.7", override: true},
+      {:broadway, "~> 0.6.0"},
+      {:poolboy, "~> 1.5"}
     ]
   end
 end

@@ -3,12 +3,14 @@ defmodule Example do
     :world
   end
   
+  # send and receive only one message
   def unary do
     {:ok, channel} = GRPC.Stub.connect("localhost:50051")
     request = Example.HelloRequest.new(name: "test 1")
     Example.Greeter.Stub.say_hello(channel, request)
   end
 
+  # client sends one message gets multiple by the server
   def server_stream do
     {:ok, channel} = GRPC.Stub.connect("localhost:50051")
     request = Example.HelloRequest.new(name: "test 1")
@@ -19,6 +21,7 @@ defmodule Example do
     |> Enum.to_list
   end
 
+  # client sends an stream, server returns only one message
   def client_stream do
     {:ok, channel} = GRPC.Stub.connect("localhost:50051")
 
@@ -36,6 +39,7 @@ defmodule Example do
     GRPC.Stub.recv(stream)
   end
 
+  # Client and server send streams
   def full_duplex do
     {:ok, channel} = GRPC.Stub.connect("localhost:50051")
 

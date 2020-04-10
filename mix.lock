@@ -1,8 +1,12 @@
 %{
+  "broadway": {:hex, :broadway, "0.6.0", "ef14ec31efd2044c1b280691a46e022dbfe557044da97414678e8ee996673746", [:mix], [{:gen_stage, "~> 1.0", [hex: :gen_stage, repo: "hexpm", optional: false]}, {:telemetry, "~> 0.4.0", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "7d47c11b315d50bc15a712dbaf1e8ceba8a2ec4f50b53146192f40bb733ca051"},
   "cowboy": {:git, "https://github.com/elixir-grpc/cowboy.git", "db1b09fb06038415e5c643282554c0b9f8e6a976", [tag: "grpc-2.6.3"]},
   "cowlib": {:git, "https://github.com/elixir-grpc/cowlib.git", "1cc32e27d917bfe615da6957006fd9f8d6e604bd", [tag: "grpc-2.7.3"]},
+  "gen_stage": {:hex, :gen_stage, "1.0.0", "51c8ae56ff54f9a2a604ca583798c210ad245f415115453b773b621c49776df5", [:mix], [], "hexpm", "1d9fc978db5305ac54e6f5fec7adf80cd893b1000cf78271564c516aa2af7706"},
   "grpc": {:git, "https://github.com/elixir-grpc/grpc.git", "e45282526107417bd54f57bb8298b52a7c272ccb", [tag: "v0.4.0"]},
   "gun": {:git, "https://github.com/elixir-grpc/gun.git", "975177bd5c179c800c8685cf64376689642ac972", [tag: "grpc-1.3.2"]},
+  "poolboy": {:hex, :poolboy, "1.5.2", "392b007a1693a64540cead79830443abf5762f5d30cf50bc95cb2c1aaafa006b", [:rebar3], [], "hexpm", "dad79704ce5440f3d5a3681c8590b9dc25d1a561e8f5a9c995281012860901e3"},
   "protobuf": {:hex, :protobuf, "0.7.1", "7d1b9f7d9ecb32eccd96b0c58572de4d1c09e9e3bc414e4cb15c2dce7013f195", [:mix], [], "hexpm", "6eff7a5287963719521c82e5d5b4583fd1d7cdd89ad129f0ea7d503a50a4d13f"},
   "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm", "451d8527787df716d99dc36162fca05934915db0b6141bbdac2ea8d3c7afc7d7"},
+  "telemetry": {:hex, :telemetry, "0.4.1", "ae2718484892448a24470e6aa341bc847c3277bfb8d4e9289f7474d752c09c7f", [:rebar3], [], "hexpm", "4738382e36a0a9a2b6e25d67c960e40e1a2c95560b9f936d8e29de8cd858480f"},
 }
